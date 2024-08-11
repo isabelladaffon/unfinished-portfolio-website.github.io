@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Primary Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ID Personal Portfolio">
+    <meta name="keywords" content="Personal Portfolio, Portfolio Website, HTML, CSS">
+    <meta name="author" content="Isabella Daffon">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@100..900&family=Roboto:wght@300;400;500;700;900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>ID Portfolio | Isabella Daffon</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav_content">
+                <div class="logo">
+                    <a href="#">ID.</a>
+                </div>
+
+                <label for="check" class="checkbox">
+                    <i class='bx bx-menu'></i>
+                </label>
+                
+                <input type="checkbox" name="check" id="check">
+                <ul>
+                    <!-- class="nav-links" -->
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+
+    <!-- This is the Home or Landing page -->
+    <section id="Home">
+        <div class="left-side">
+            <h4>Hi! I am</h4>
+            <h1>Isabella<br>Daffon.</h1>
+
+            <div class="links">
+                <a href="#"><i class="bx bxl-facebook"></i></a>
+                <a href="#"><i class="bx bxl-linkedin"></i></a>
+                <a href="#"><i class="bx bxl-instagram"></i></a>
+                <a href="#"><i class="bx bxl-github"></i></a>
+            </div>
+        </div>
+        <div class="right-side">
+            <h4>About Me</h4>
+            <h4>I'm a</h4>
+            <h1>Rockstar<br>Virtual Assistant</h1>
+            <p>I'm passionate about empowering businesses succeed with high-quality digital solutions. Specializing in <strong>Web Development</strong>, <strong>Copywriting</strong>, and <strong>Digital Marketing</strong>, I will help <strong>YOU</strong> establish a strong online presence and connect with their audience effectively.</p>
+            <p>Let’s bring your ideas to life and drive your success together!</p>
+
+            <!-- <button><a href="#portfolio" button id="download-my-cv">Download my CV</a>
+            </button>
+            <button><a href="#contact" button id="work-with-me" class="work-with-me">Work with Me</a></button> -->
+        </div>
+        <div>
+            <button class="download_my_cv">Download my CV</button>
+            <button class="work_with_me">Work with Me</button>
+        </div>
+        <div class="image">
+            <img src="Assets/Headshot Profile.png" alt="ID Profile">
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>What I Can Do For You?</h2>
+
+        <div class="services-grid">
+            <div class="service-item">
+                <img src="" alt="Web Development Icon" class="service-icon">
+                <h3>Web Development</h3>
+                <p>Craft visually stunning and user-friendly websites tailored to your brand.</p>
+            </div>
+                
+            <div class="service-item">
+                <img src="" alt="Copywriting Icon" class="service-icon">
+                <h3>Copywriting</h3>
+                <p>Create compelling content that resonates with your audience and converts visitors into loyal customers.</p>
+            </div>
+
+            <div class="service-item">
+                <img src="" alt="Digital Marketing Icon" class="service-icon">
+                <h3>Digital Marketing</h3>
+                <p>Implement strategic campaigns to boost your online visibility, attract targeted traffic, and maximize conversions.</p>
+            </div>
+        </div>   
+    </section>
+
+    <!-- This is the Testimonials page -->
+    <section id="testimonials">
+        <h2>What My Clients Say About Me</h2>
+    
+        <p>"I can't thank Chi enough for her digital marketing expertise! She crafted a tailored marketing strategy that perfectly aligned with my business goals. Her insights into SEO and social media marketing have made a noticeable difference in my online visibility. Working with her felt like having a partner who truly invested in my success. Highly recommend her services!" - Al Remsworth</p>
+  
+        <p>"Working with Chi was a fantastic experience! She helped me launch my first e-commerce site, and her guidance was invaluable. The website is not only beautiful but also optimized for conversions. She took care of everything from design to marketing, making the process seamless. I’m excited to see how my business grows with her support!" - Ryle Chase</p>
+    
+        <p>"Chi is not just a freelancer; she is a partner in my journey! Her dedication to understanding my brand and audience was evident in every piece of content she created. The copy she wrote for my blog has helped establish my authority in the industry, and I’ve received so much positive feedback from my readers. I can’t recommend her enough!" - Mika Blackwater</p>    
+    </section>
+
+    <!-- This is the Contact page -->
+    <section id="contact">
+        <h2>Let's Work Together</h2>
+        <p>Send Me an Email: chi.studio@gmail.com</p>
+        <p>Visit my Socials: Chi Daffon</p>
+        <div class="social-media">
+            <a href="#facebook"><img src="facebook-icon.png" alt="Facebook Icon"></a>
+            <a href="#twitter"><img src="twitter-icon.png" alt="Twitter Icon"></a>
+            <a href="#linkedin"><img src="linkedin-icon.png" alt="LinkedIn Icon"></a>
+        </div>
+    </section>
+
+    <section id="signup">
+        <form action="/submit" method="POST" class="signup-form">
+        <h1>Sign Up for Updates</h1>
+        <p>Stay informed about my latest projects and services!</p>
+                
+        <label for="name"><strong>Name</strong></label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    
+        <label for="email"><strong>Email</strong></label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    
+        <label for="message"><strong>Message</strong></label>
+        <textarea id="message" name="message" placeholder="How can I help you?" rows="4"></textarea>
+    
+        <label>
+        <input type="checkbox" name="subscribe" checked="checked"> Subscribe to my newsletter
+        </label>
+    
+        <button type="submit">Sign Up</button>
+        </form>
+    </section>
+    
+    </body>
+    </html>
+
+    <!-- Finally the footer -->
+    <footer>
+        <p>&copy; 2024 CHI. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
